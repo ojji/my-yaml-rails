@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Yaml::VERSION
 
+  gem.add_dependency "jquery-rails", [">= 1.0.17"]
   gem.add_dependency "sass", [">= 3.2.0"]
   gem.add_development_dependency "rake"
 end
