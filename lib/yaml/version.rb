@@ -1,3 +1,3 @@
 module Yaml
-	VERSION = "0.0.1"
+	VERSION = "4.1.2.0"
 end

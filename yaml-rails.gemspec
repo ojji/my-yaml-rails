@@ -1,10 +1,10 @@
 require File.expand_path('../lib/yaml/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Zoltán Tóth"]
+  gem.authors       = ["Zoltan Toth"]
   gem.email         = ["zshun86@gmail.com"]
   gem.description   = %q{YAML CSS Framework for Rails}
-  gem.summary       = %q{summary pls.}
+  gem.summary       = %q{YAML CSS Framework for Rails}
   gem.homepage      = "https://github.com/ojji/my-yaml-rails"
 
   gem.files         = `git ls-files`.split($\)
