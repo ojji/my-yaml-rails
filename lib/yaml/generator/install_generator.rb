@@ -8,6 +8,13 @@ module Yaml
 			def add_assets
 				insert_into_file "app/assets/javascripts/application#{detect_js[0]}", "#{detect_js[1]} require jquery.tabs\n", :after => "jquery_ujs\n"
 				insert_into_file "app/assets/javascripts/application#{detect_js[0]}", "#{detect_js[1]} require jquery.syncheight\n", :after => "jquery.tabs\n"
+				yaml_globals = File.join(File.dirname(__FILE__), "..", "..", "..", "scss", "_yaml-var-globals.scss")
+				yaml_typography = File.join(File.dirname(__FILE__), "..", "..", "..", "scss", "_yaml-var-typography.scss")
+				yaml_layouts = File.join(File.dirname(__FILE__), "..", "..", "..", "scss", "_layouts.scss")
+				create_file "app/assets/stylesheets/yaml_modules_and_settings.scss", File.read(yaml_globals)
+				append_to_file "app/assets/stylesheets/yaml_modules_and_settings.scss", File.read(yaml_typography)
+				append_to_file "app/assets/stylesheets/yaml_modules_and_settings.scss", "\n@import 'yaml';\n"
+				append_to_file "app/assets/stylesheets/yaml_modules_and_settings.scss", File.read(yaml_layouts)
 			end
 
 			def detect_js

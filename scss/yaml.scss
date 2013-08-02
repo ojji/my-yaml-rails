@@ -1,8 +1,7 @@
 @charset "utf-8";
-
-@import "yaml-var-globals",
-		"mixins/yaml-mixins-core";
-
+// Core functions
+@import "mixins/yaml-mixins-core";
+// Modules
 @import "core/base",
 		"navigation/vlist",
 		"navigation/hlist",
