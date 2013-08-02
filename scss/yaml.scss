@@ -3,10 +3,15 @@
 @import "mixins/yaml-mixins-core";
 // Modules
 @import "core/base",
+		"add-ons/rtl-support/core/base-rtl",
 		"navigation/vlist",
+		"add-ons/rtl-support/navigation/vlist-rtl",
 		"navigation/hlist",
+		"add-ons/rtl-support/navigation/hlist-rtl",
 		"forms/gray-theme",
+		"add-ons/rtl-support/forms/gray-theme-rtl",
 		"add-ons/accessible-tabs/tabs",
 		"add-ons/microformats/microformats",
 		"screen/typography",
+		"add-ons/rtl-support/screen/typography-rtl",
 		"print/print"

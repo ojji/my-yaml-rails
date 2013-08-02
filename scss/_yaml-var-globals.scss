@@ -17,6 +17,7 @@ $ym-base-grids			: true !default;
 $ym-base-forms			: true !default;
 $ym-base-accessibility	: true !default;
 $ym-base-print			: true !default;
+$ym-rtl-support			: false !default;
 
 @if $use-yaml == false {
 	$ym-base-normalization	: false;
@@ -26,6 +27,7 @@ $ym-base-print			: true !default;
 	$ym-base-forms			: false;
 	$ym-base-accessibility	: false;
 	$ym-base-print			: false;
+	$ym-rtl-support			: false;
 }
 
 // Config: Columns Module
