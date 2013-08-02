@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@import "yaml-var-globals",
+		"mixins/yaml-mixins-core";
+
 @import "core/base",
 		"navigation/vlist",
 		"navigation/hlist",
@@ -7,4 +10,4 @@
 		"add-ons/accessible-tabs/tabs",
 		"add-ons/microformats/microformats",
 		"screen/typography",
-		"print/print";
+		"print/print"
