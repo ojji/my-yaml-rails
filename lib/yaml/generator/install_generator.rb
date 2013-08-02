@@ -15,7 +15,7 @@ module Yaml
 				append_to_file "app/assets/stylesheets/yaml_modules_and_settings.scss", File.read(yaml_typography)
 				append_to_file "app/assets/stylesheets/yaml_modules_and_settings.scss", "\n@import 'yaml';\n"
 				append_to_file "app/assets/stylesheets/yaml_modules_and_settings.scss", File.read(yaml_layouts)
-				append_to_file "app/assets/stylesheets/application.css.scss", "@import yaml_modules_and_settings;\n"
+				append_to_file "app/assets/stylesheets/application.css.scss", "@import 'yaml_modules_and_settings';\n"
 			end
 
 			def detect_js_format
