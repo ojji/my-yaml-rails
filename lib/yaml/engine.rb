@@ -5,7 +5,7 @@ module Yaml
 			app.config.assets.paths << File.expand_path("../../../scss", __FILE__) 
 			app.config.assets.paths << File.expand_path("../../../js", __FILE__) 
 
-			app.config.assets.precompile += %w(yaml-focusfix.js html5shiv.js html5shiv-printshiv.js)
+			app.config.assets.precompile += %w(yaml-focusfix.js html5shiv.js html5shiv-printshiv.js iehacks.css)
 		}
 
 		initializer	'yaml.update_asset_paths', &add_paths_block
